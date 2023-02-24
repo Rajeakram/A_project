@@ -7,3 +7,9 @@ if "is"not in "a":
     print("yes it is")
 else:
     print("NO")
+a = 5
+def x():
+    global c
+    c = 10
+    print(a+c)
+x()
