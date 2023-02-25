@@ -31,7 +31,7 @@ except AssertionError: # "try" and "except" use for if title gets wrong then tes
 time.sleep(4)
 print("test complete")"""
 
-from selenium import webdriver
+"""from selenium import webdriver
 import time
 
 browser =webdriver.Edge()
@@ -54,5 +54,30 @@ else:
     print("yes Doesnt match")
 
 
-print("test Complete")
+print("test Complete")"""
 
+from selenium import webdriver
+import time
+
+browser= webdriver.Edge()
+time.sleep(2)
+browser.get("https://www.yahoo.com/")
+x = browser.get_window_size()
+print(x)
+browser.set_window_size(1500,1000)
+time.sleep(5)
+
+try:
+    assert "Gmail" in browser.title
+    print ("Yes")
+except AssertionError:
+    print(str(AssertionError), "Wrong Name")
+
+try:
+    assert "https://www.gmail.com/" in browser.current_url
+    print("You are in right path")
+except:
+    print("path is not correct")
+
+"""This Page is for Go to the page,open a browser,
+size of a browser,check the title"""
