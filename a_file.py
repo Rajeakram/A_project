@@ -14,7 +14,7 @@ def x():
     print(a+c)
 x()
 
-from selenium import webdriver
+"""from selenium import webdriver
 import time
 
 browser=webdriver.Chrome()
@@ -29,4 +29,30 @@ except AssertionError: # "try" and "except" use for if title gets wrong then tes
     print(str(AssertionError))
 
 time.sleep(4)
-print("test complete")
+print("test complete")"""
+
+from selenium import webdriver
+import time
+
+browser =webdriver.Edge()
+browser.get("https://www.yahoo.com/")
+browser.maximize_window()
+time.sleep(3)
+browser.set_window_size(300,400)
+time.sleep(3)
+x= browser.get_window_size()
+print(x)
+
+try :
+    assert "Youtube" in browser.title
+    print("yes Yahoo!! in there")
+except:
+    print("Doesn't Match")
+if "https://www.yahoo.com/" in browser.current_url:
+    print("Yes It Match")
+else:
+    print("yes Doesnt match")
+
+
+print("test Complete")
+
