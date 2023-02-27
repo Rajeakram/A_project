@@ -2,7 +2,7 @@
 Id, Name, ClassName, tag Name , TagName , Link Text, PartioLinkText ,CSS, Xpath"""
 from selenium.webdriver.common.by import By
 
-"""from selenium import webdriver
+from selenium import webdriver
 import time
 
 from selenium.webdriver.common.by import By
@@ -27,7 +27,7 @@ z=driver.find_element(By.ID, "submit")
 if z is not None:
     print("Yahoo")
 
-print("Test Pass")"""
+print("Test Pass")
 
 
 from selenium import webdriver

@@ -14,7 +14,7 @@ def x():
     print(a+c)
 x()
 
-"""from selenium import webdriver
+from selenium import webdriver
 import time
 
 browser=webdriver.Chrome()
@@ -29,9 +29,9 @@ except AssertionError: # "try" and "except" use for if title gets wrong then tes
     print(str(AssertionError))
 
 time.sleep(4)
-print("test complete")"""
+print("test complete")
 
-"""from selenium import webdriver
+from selenium import webdriver
 import time
 
 browser =webdriver.Edge()
@@ -54,7 +54,7 @@ else:
     print("yes Doesnt match")
 
 
-print("test Complete")"""
+print("test Complete")
 
 from selenium import webdriver
 import time

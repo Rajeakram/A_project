@@ -23,3 +23,6 @@ x = y =z ="Dhaka"
 
 a = "i love in {},i was born in {},i want to live in {}"
 print(a.format(x,y,z))
+
+
+
