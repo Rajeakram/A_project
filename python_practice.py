@@ -1,4 +1,4 @@
-A="akram"
+'''A="akram"
 print(type(A))
 
 a ="jaman is a good boy but he smokes ciggarate"
@@ -22,7 +22,10 @@ print(x.format(a,b,c))
 x = y =z ="Dhaka"
 
 a = "i love in {},i was born in {},i want to live in {}"
-print(a.format(x,y,z))
+print(a.format(x,y,z))'''
+
+
+
 
 
 
